@@ -20,7 +20,7 @@ public class Game {
 			score += rolls.get(rollIdx) + rolls.get(rollIdx + 1);
 			//ストライクの場合
 			if(rolls.get(rollIdx) == 10) {
-				score += rolls.get(2 +rollIdx) + rolls.get(3 + rollIdx);
+				score += rolls.get(rollIdx + 3) + rolls.get(rollIdx + 4);
 			}
 			rollIdx += 2;
 		}

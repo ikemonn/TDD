@@ -18,11 +18,9 @@ public class Game {
 		int rollIdx = 0;
 		for (int i = 0; i < 10; i++) {
 			score += rolls.get(rollIdx) + rolls.get(rollIdx + 1);
-			//ストライクの場合
-			if(rolls.get(rollIdx) == 10) {
-				score += rolls.get(2 +rollIdx) + rolls.get(3 + rollIdx);
-			}
 			rollIdx += 2;
+
+			score += roll;
 		}
 		return score;
 	}
