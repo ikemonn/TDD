@@ -14,9 +14,6 @@ public class Game {
 	}
 
 	public int score() {
-		for (int roll: rolls) {
-			score += roll;
-		}
 		return score;
 	}
 
